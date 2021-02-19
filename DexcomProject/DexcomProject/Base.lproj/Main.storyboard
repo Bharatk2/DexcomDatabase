@@ -16,18 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dexcom Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-hM-wLG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dexcom Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-hM-wLG">
                                 <rect key="frame" x="20" y="144" width="374" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxb-fS-mRI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxb-fS-mRI">
                                 <rect key="frame" x="102" y="280" width="210" height="54"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="5iw-zD-tcA"/>
-                                    <constraint firstAttribute="height" constant="54" id="Bnf-ym-Mcj"/>
+                                    <constraint firstAttribute="height" constant="54" id="9oa-2s-dEf"/>
+                                    <constraint firstAttribute="width" constant="210" id="CYC-R7-n6W"/>
                                 </constraints>
                                 <state key="normal" title="Access">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,19 +37,49 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cxb-fS-mRI" firstAttribute="top" secondItem="kTQ-hM-wLG" secondAttribute="bottom" constant="95" id="OuK-96-lEi"/>
-                            <constraint firstItem="kTQ-hM-wLG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dQ3-sI-dhH"/>
-                            <constraint firstItem="kTQ-hM-wLG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="oBp-ac-6Ri"/>
-                            <constraint firstItem="cxb-fS-mRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIw-Ed-65p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kTQ-hM-wLG" secondAttribute="trailing" constant="20" id="rff-zU-1FH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cxb-fS-mRI" secondAttribute="bottom" constant="528" id="ulD-oN-h5d"/>
+                            <constraint firstItem="kTQ-hM-wLG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KCA-Pc-eU5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kTQ-hM-wLG" secondAttribute="trailing" constant="20" id="R79-c2-Baa"/>
+                            <constraint firstItem="cxb-fS-mRI" firstAttribute="top" secondItem="kTQ-hM-wLG" secondAttribute="bottom" constant="95" id="YOR-qW-T1Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cxb-fS-mRI" secondAttribute="bottom" constant="528" id="j4z-rG-e2q"/>
+                            <constraint firstItem="cxb-fS-mRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tnn-g8-m8G"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rFM-Am-eEx"/>
+                    <connections>
+                        <segue destination="pLT-FR-zif" kind="show" id="Sde-FL-XKo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="105.80357142857143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ENv-vh-s7w">
+            <objects>
+                <viewController id="pLT-FR-zif" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9YX-5O-P3V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2d-HF-fQ3">
+                                <rect key="frame" x="166.5" y="437.5" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7T6-D0-OEe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H2d-HF-fQ3" firstAttribute="centerX" secondItem="9YX-5O-P3V" secondAttribute="centerX" id="izX-si-LE6"/>
+                            <constraint firstItem="H2d-HF-fQ3" firstAttribute="centerY" secondItem="9YX-5O-P3V" secondAttribute="centerY" id="wRe-n2-UbQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q7m-R0-i5d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNd-ub-dMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5YF-bR-DT5">

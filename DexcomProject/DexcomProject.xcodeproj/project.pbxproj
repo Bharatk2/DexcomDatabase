@@ -56,15 +56,39 @@
 		C588E54825DEDCFA0025CCEC /* DexcomProject */ = {
 			isa = PBXGroup;
 			children = (
+				C588E56125DF425E0025CCEC /* ViewControllers */,
+				C588E56025DF42570025CCEC /* ModelController */,
+				C588E55F25DF424F0025CCEC /* Model */,
 				C588E54925DEDCFA0025CCEC /* AppDelegate.swift */,
 				C588E54B25DEDCFA0025CCEC /* SceneDelegate.swift */,
-				C588E54D25DEDCFA0025CCEC /* ViewController.swift */,
 				C588E54F25DEDCFA0025CCEC /* Main.storyboard */,
 				C588E55225DEDCFC0025CCEC /* Assets.xcassets */,
 				C588E55425DEDCFC0025CCEC /* LaunchScreen.storyboard */,
 				C588E55725DEDCFC0025CCEC /* Info.plist */,
 			);
 			path = DexcomProject;
+			sourceTree = "<group>";
+		};
+		C588E55F25DF424F0025CCEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C588E56025DF42570025CCEC /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		C588E56125DF425E0025CCEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C588E54D25DEDCFA0025CCEC /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
